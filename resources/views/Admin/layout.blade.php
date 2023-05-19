@@ -71,6 +71,12 @@
             </li>
 
             <li>
+              <a class="dropdown-item d-flex align-items-center" href="{{ url('admin/profile') }}">
+                <i class="bi bi-person"></i>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
               <a class="dropdown-item d-flex align-items-center" href="{{ url('admin/change-password') }}">
                 <i class="bi bi-person"></i>
                 <span>Change Password</span>
