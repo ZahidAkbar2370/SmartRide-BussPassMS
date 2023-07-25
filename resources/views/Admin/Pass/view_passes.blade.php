@@ -49,7 +49,7 @@
                     <th scope="col">Category Name</th>
                     <th scope="col">Pass Number</th>
                     <th scope="col">Full Name</th>
-                    {{-- <th scope="col">Email</th> --}}
+                    <th scope="col">Status</th>
                     <th scope="col">Action</th>
                   </tr>
                 </thead>
@@ -61,7 +61,7 @@
                             <td>{{ $pass->category }}</td>
                             <td>{{ $pass->pass_number }}</td>
                             <td>{{ $pass->full_name }}</td>
-                            {{-- <td>{{ $pass->email }}</td> --}}
+                            <td>{{ $pass->status }}</td>
                             <td>
                                 <a href="{{ url('admin/show-pass', $pass->id) }}" class="btn btn-warning">Show</a>
                                 <a href="{{ url('admin/edit-pass', $pass->id) }}" class="btn btn-info">Edit</a>

@@ -39,6 +39,7 @@ class PassController extends Controller
         $pass->from_date  = $request->from_date;
         $pass->to_date  = $request->to_date;
         $pass->cost  = $request->cost;
+        $pass->status  = "approved";
         $pass->save();
         
         Session::flash("message", "Pass Created Successfully!");
@@ -78,6 +79,7 @@ class PassController extends Controller
         // $pass->from_date  = $request->from_date;
         // $pass->to_date  = $request->to_date;
         $pass->cost  = $request->cost;
+        $pass->status  = "approved";
         $pass->save();
         
         Session::flash("message", "Pass Created Successfully!");
