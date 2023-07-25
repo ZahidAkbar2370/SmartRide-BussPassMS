@@ -23,5 +23,7 @@ class Pass extends Model
         "from_date",
         "to_date",
         "cost",
+        "from_location",
+        "status",
     ];
 }

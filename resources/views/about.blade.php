@@ -20,6 +20,10 @@ a{
     color: white
 
 }
+a:hover{
+    color: rgb(255, 255, 255)
+
+}
     </style>
 </head>
 <body>
@@ -37,7 +41,7 @@ a{
                 <a href="{{ url('/') }}" class="ml-4">Home</a>
                 <a href="{{ url('about') }}" class="ml-4">About</a>
                 <a href="{{ url('contact-us') }}" class="ml-4">Contact us</a>
-                <a href="https://web.whatsapp.com/" target="_blank" class="ml-4">Need Help?</a>
+                <a href="{{ url('pass') }}" class="ml-4"> Pass</a>
             </div> 
         </div>
     </div>

@@ -20,6 +20,10 @@ a{
     color: white
 
 }
+a:hover{
+    color: rgb(255, 255, 255)
+
+}
     </style>
 </head>
 <body>
@@ -37,12 +41,12 @@ a{
                 <a href="{{ url('/') }}" class="ml-4">Home</a>
                 <a href="{{ url('about') }}" class="ml-4">About</a>
                 <a href="{{ url('contact-us') }}" class="ml-4">Contact us</a>
-                <a href="https://web.whatsapp.com/" target="_blank" class="ml-4">Need Help?</a>
+                <a href="{{ url('pass') }}" class="ml-4"> Pass</a>
             </div> 
         </div>
     </div>
 
-    <div class="container mt-5 mb-3">
+    <div class="card container mt-5 mb-3 p-5">
         <div class="row">
             <div class="col-12">
                 <h3 class="text-center">Contact Us</h3>
@@ -80,25 +84,25 @@ a{
             </div>
 
         </div>
-    </div>
-
-
-
-    <div class="text-center mt-5">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-6 offset-3">
-                    @if(Session::has("message"))
-            <p class="p-3 bg-success">{{ Session::get("message") }}</p>
-        @endif
+        <div class="text-center mt-5">
+    
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        @if(Session::has("message"))
+                <p class="p-3 bg-success">{{ Session::get("message") }}</p>
+            @endif
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
-    </div>
     
+            <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+        </div>
+        
+    </div>
+
+
+
 
 
     <!-- Modal -->

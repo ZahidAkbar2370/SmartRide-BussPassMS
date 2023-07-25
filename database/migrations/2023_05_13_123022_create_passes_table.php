@@ -20,10 +20,12 @@ return new class extends Migration
             $table->string("email")->nullable();
             $table->string("cnic_no")->nullable();
             $table->string("category");
+            $table->longText("from_location")->nullable();
             $table->longText("destination")->nullable();
             $table->string("from_date")->nullable();
             $table->string("to_date")->nullable();
             $table->string("cost");
+            $table->enum("status", ["pending", "approved"])->default("pending");
             $table->timestamps();
         });
     }

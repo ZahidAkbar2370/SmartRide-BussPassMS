@@ -35,6 +35,7 @@ class PassController extends Controller
         $pass->cnic_no  = $request->cnic_no;
         $pass->category  = $request->category;
         $pass->destination  = $request->destination;
+        $pass->from_location  = $request->from_location;
         $pass->from_date  = $request->from_date;
         $pass->to_date  = $request->to_date;
         $pass->cost  = $request->cost;

@@ -26,6 +26,7 @@ class PassFactory extends Factory
                 "cnic_no" => "12323412312321",
                 "category" => $this->faker->word(),
                 "destination" => $this->faker->paragraph(),
+                "from_location" => $this->faker->paragraph(),
                 "cost" => $this->faker->numberBetween(200,900),
             ];
     }

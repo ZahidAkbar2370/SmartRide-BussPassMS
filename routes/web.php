@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Category;
 use App\Models\ContactMessage;
+use App\Models\Pass;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -20,6 +22,31 @@ use Illuminate\Support\Facades\Session;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/pass', function () {
+    $categories = Category::all();
+
+    return view('pass', compact('categories'));
+});
+
+Route::post('/save-pass', function (Request $request) {
+        $pass = new Pass();
+        $pass->pass_number  = rand(1000,900000) + time();
+        $pass->full_name  = $request->full_name;
+        $pass->profile_image  = $request->profile_image;
+        $pass->contact_number  = $request->contact_number;
+        $pass->email  = $request->email;
+        $pass->category  = $request->category;
+        $pass->destination  = $request->destination;
+        $pass->from_location  = $request->from_location;
+        $pass->from_date  = $request->from_date;
+        $pass->to_date  = $request->to_date;
+        $pass->cost  = 0;
+        $pass->save();
+        
+        Session::flash("message", "Pass Request Submit Successfully!");
+        return redirect('pass');
 });
 
 Route::get('about', function () {

@@ -74,6 +74,25 @@
 
             </div><!-- End Customers Card -->
 
+             <!-- Customers Card -->
+             <div class="col-xxl-4 col-xl-4">
+
+              <div class="card info-card customers-card">
+
+                <div class="card-body">
+                  <h5 class="card-title">Pass Saven Days</h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="ps-3">
+                      <h6>{{ $pastSevenDaysCreatedPasses ?? 0 }}</h6>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div><!-- End Customers Card -->
+
           </div>
         </div><!-- End Left side columns -->
 

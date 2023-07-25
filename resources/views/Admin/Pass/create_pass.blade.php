@@ -110,6 +110,15 @@
                 </div>
 
                 <div class="col-md-12">
+                    <label>From Location</label>
+                    <input type="text" class="form-control" name="from_location" placeholder="Enter From Location" required>
+  
+                    @error("from_location")
+                      <strong class="text-danger">{{ $message }}</strong>
+                    @enderror
+                </div>
+
+                <div class="col-md-12">
                     <label>Destination</label>
                     <input type="text" class="form-control" name="destination" placeholder="Enter Destination" required>
   

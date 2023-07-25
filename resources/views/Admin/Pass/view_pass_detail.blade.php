@@ -65,7 +65,11 @@
 
                   <div class="row">
                     <div class="col-lg-3 col-md-4 label">Address</div>
-                    <div class="col-lg-9 col-md-8">{{ $pass->address }}</div>
+                    <div class="col-lg-9 col-md-8">{{ $pass->destination }}</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">From Location</div>
+                    <div class="col-lg-9 col-md-8">{{ $pass->from_location }}</div>
                   </div>
 
                   <div class="row">

@@ -8,10 +8,6 @@
       <h1>All Passes</h1>
     </div><!-- End Page Title -->
 
-    @if(Session::has('message'))
-                <span class="bg-success p-2 mb-3 text-white">{{ Session::get('message') }}</span>
-             @endif
-
     <div class="container mb-4">
       <form action="{{ URL::to('admin/search') }}" method="post">
         @csrf
