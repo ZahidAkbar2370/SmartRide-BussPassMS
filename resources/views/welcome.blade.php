@@ -60,6 +60,10 @@ a:hover{
                       <div class="carousel-item">
                         <img class="d-block w-100" src="{{ asset('3.jpg') }}" style="height: 580px;width: 100%;" alt="Third slide">
                       </div>
+
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="{{ asset('4.jpg') }}" style="height: 580px;width: 100%;" alt="Third slide">
+                      </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -74,7 +78,77 @@ a:hover{
 
         </div>
     </div>
-    
+
+
+    <div class="container mt-3">
+      <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Welcome to our bus pass system!</h3>
+                <p class="card-text text-justify">We are thrilled to have you on board as a valued member of our transportation community. With our efficient and user-friendly bus pass system, getting around town has never been more convenient. Say goodbye to the hassle of carrying change or searching for exact fares – our system offers a seamless and cashless way to travel.
+
+                  Whether you're a daily commuter, a student heading to school, or someone exploring the city, our bus pass system is designed to cater to your needs. Enjoy the freedom of unlimited rides within your chosen pass duration, and hop on and off buses as you please. Our extensive network of routes ensures you can reach your destination with ease.
+                  
+                  Safety and security are at the forefront of our priorities. Rest assured, our buses are regularly sanitized, and our drivers are well-trained to ensure a smooth and safe journey for all passengers. Your comfort and well-being matter to us, and we strive to make your travel experience a pleasant one.
+                  
+                  Our team is always here to assist you with any inquiries or support you may need. If you ever have questions about our bus pass system or need guidance, feel free to reach out to us. We're dedicated to providing excellent customer service and making your travel experience as convenient as possible.
+                  
+                  Thank you for choosing our bus pass system! We look forward to being a part of your daily journeys and helping you explore all that our wonderful city has to offer. Hop on, sit back, and let our bus pass system take you where you need to go!</p>
+                <a href="{{ url('pass') }}" class="btn btn-primary">Start Now</a>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    {{-- <div class="container mt-3">
+      <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div> --}}
+
+
+    <div class="container-fluid mt-5 p-0 m-0">
+        <div class="row">
+            <div class="col-12 text-center">
+              <p>Design and Developed by Awais</p>
+            </div>
+
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
