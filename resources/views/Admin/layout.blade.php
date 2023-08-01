@@ -172,9 +172,16 @@
       </li><!-- End pages Nav -->
 
       <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ url('admin/report-pass') }}">
+          <i class="bi bi-menu-button-wide"></i>
+          <span>Report Pass</span>
+        </a>
+      </li><!-- End Blank Page Nav -->
+
+      <li class="nav-item">
         <a class="nav-link collapsed" href="{{ url('admin/contact-messages') }}">
           <i class="bi bi-file-earmark"></i>
-          <span>Contact Message</span>
+          <span>Enquiry</span>
         </a>
       </li><!-- End Blank Page Nav -->
 

@@ -8,7 +8,7 @@
       <h1>All Passes</h1>
     </div><!-- End Page Title -->
 
-    <div class="container mb-4">
+    {{-- <div class="container mb-4">
       <form action="{{ URL::to('admin/search') }}" method="post">
         @csrf
       <div class="row">
@@ -29,7 +29,7 @@
 
       </div>
     </form>
-    </div>
+    </div> --}}
 
     <section class="section">
       <div class="row">

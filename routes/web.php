@@ -30,6 +30,7 @@ Route::get('/pass', function () {
     return view('pass', compact('categories'));
 });
 
+
 Route::post('/save-pass', function (Request $request) {
         $pass = new Pass();
         $pass->pass_number  = rand(1000,900000) + time();
@@ -96,6 +97,7 @@ Route::get('admin/contact-messages', [App\Http\Controllers\Admin\ContactMessageC
 Route::get('admin/mark-as-reply/{id}', [App\Http\Controllers\Admin\ContactMessageController::class, "updateStatus"]);
 Route::get('admin/delete-message/{id}', [App\Http\Controllers\Admin\ContactMessageController::class, "destroy"]);
 
+Route::get('admin/report-pass', [App\Http\Controllers\Admin\SearchController::class, "reportPass"]);
 Route::post('admin/search', [App\Http\Controllers\Admin\SearchController::class, "search"]);
 Route::get('admin/change-password', [App\Http\Controllers\Admin\SearchController::class, "changePassword"]);
 Route::post('admin/update-password', [App\Http\Controllers\Admin\SearchController::class, "updatePassword"]);

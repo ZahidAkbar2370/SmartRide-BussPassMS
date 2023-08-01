@@ -17,13 +17,20 @@ class SearchController extends Controller
         $this->middleware('auth');
     }
 
+    function reportPass() {
+
+        $pass = Pass::whereBetween('created_at', [now(), now()])->get();
+
+        return view('Admin.Pass.report_pass', compact('pass'));
+    }
+
     public function search(Request $request)
     {
         $from = $request->from_date;
         $to = $request->to_date;
-        $pass = Pass::whereBetween('created_at', [$from, $to])->get();
+        $passes = Pass::whereBetween('created_at', [$from, $to])->get();
 
-        return view('Admin.Pass.view_passes', compact('pass'));
+        return view('Admin.Pass.report_pass', compact('passes'));
     }
 
     public function changePassword()
@@ -56,6 +63,7 @@ class SearchController extends Controller
 
         $user = User::find($id);
         $user->name = $request->name;
+        $user->email = $request->email;
         $user->update();
 
         Session::flash("message", "Profile Updated Successfully!");
